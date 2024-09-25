@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html,
+body {
+	--w3m-background-color: var(--color-primary-500);
+	height: 100%;
+}
+
+body {
+	@apply bg-surface-900;
+}
+
+.bg-primary {
+	background-color: #fff;
+}
+.bg-secondary {
+	background-color: #000;
+}
+
+.card {
+	@apply bg-surface-50;
+	@apply dark:bg-surface-500;
+}
+
+hr {
+	@apply dark:!border-t;
+	@apply dark:!border-surface-400;
+}
